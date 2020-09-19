@@ -19,10 +19,10 @@ public class SavingsAccountTest {
      *
      */
 
-//    @Test
-//    public void shouldBeAbleToInstantiateSavingsAccount() {
-//        SavingsAccount underTest = new SavingsAccount(0, 110110110, 0.10);
-//    }
+    @Test
+    public void shouldBeAbleToInstantiateSavingsAccount() {
+        SavingsAccount underTest = new SavingsAccount(0, 110110110, 0.10);
+    }
 //
 //    @Test
 //    public void newAccountsHaveAStartingBalanceFromTheConstructor() {
