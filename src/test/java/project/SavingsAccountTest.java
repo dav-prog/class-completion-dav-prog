@@ -30,14 +30,14 @@ public class SavingsAccountTest {
         double balance = underTest.getBalance();
         assertEquals(10.10, balance, 0.001);
     }
-//
-//    @Test
-//    public void newAccountHasAnAccountNumberPassedFromConstructor() {
-//        SavingsAccount underTest = new SavingsAccount(18.10, 45673251, 0.10);
-//        int accountNumber = underTest.getAccountNumber();
-//        assertEquals(45673251, accountNumber);
-//    }
-//
+
+    @Test
+    public void newAccountHasAnAccountNumberPassedFromConstructor() {
+        SavingsAccount underTest = new SavingsAccount(18.10, 45673251, 0.10);
+        int accountNumber = underTest.getAccountNumber();
+        assertEquals(45673251, accountNumber);
+    }
+
 //    @Test
 //    public void shouldBeAbleToSetInterestRateInConstructor(){
 //        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
