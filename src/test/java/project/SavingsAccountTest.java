@@ -78,13 +78,13 @@ public class SavingsAccountTest {
         underTest.accrueInterest();
         assertEquals(11.00, underTest.getBalance(), 0.001);
     }
-//    @Test
-//    public void shouldBeAbleToDepositAccrueInterestAndDepositAgain(){
-//        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, .05);
-//        underTest.deposit(10.00);
-//        underTest.accrueInterest();
-//        underTest.deposit(4.25);
-//        assertEquals(25.25, underTest.getBalance(), 0.001);
-//    }
+    @Test
+    public void shouldBeAbleToDepositAccrueInterestAndDepositAgain(){
+        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, .05);
+        underTest.deposit(10.00);
+        underTest.accrueInterest();
+        underTest.deposit(4.25);
+        assertEquals(25.25, underTest.getBalance(), 0.001);
+    }
 
 }

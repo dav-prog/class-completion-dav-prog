@@ -2,9 +2,11 @@ package project;
 
 public class SavingsAccount {
     private double balance;
+    private double interestRate;
 
     public SavingsAccount(double balance, int accountNumber, double interestRate) {
         this.balance = balance;
+        this.interestRate = interestRate;
     }
 
     public double getBalance() {
@@ -15,7 +17,7 @@ public class SavingsAccount {
     }
 
     public double getInterestRate() {
-        return 0.1;
+        return interestRate;
     }
 
     public void deposit(double amount) {
@@ -31,6 +33,7 @@ public class SavingsAccount {
 
     public void accrueInterest() {
         balance = balance + balance * getInterestRate();
+
     }
 
 }
