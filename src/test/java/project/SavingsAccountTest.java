@@ -52,32 +52,32 @@ public class SavingsAccountTest {
         underTest.deposit(9.99);
         assertEquals(20, underTest.getBalance(), .001);
     }
-//
-//    @Test
-//    public void shouldBeAbleToDepositAnotherAmount() {
-//        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
-//        underTest.deposit(19.99);
-//        assertEquals(29.99, underTest.getBalance(), .001);
-//    }
-//
-//    @Test
-//    public void shouldBeAbleToWithdrawFromAccount() {
-//        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
-//        underTest.withdraw(5.00);
-//        assertEquals(5.00, underTest.getBalance(), .001);
-//    }
-//    @Test
-//    public void shouldNotBeAbleToWithdrawIfItTakesTheBalanceBelowZero(){
-//        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
-//        underTest.withdraw(2345.43);
-//        assertEquals(10.00, underTest.getBalance(), 0.001);
-//    }
-//    @Test
-//    public void shouldBeAbleToAccrueInterest(){
-//        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
-//        underTest.accrueInterest();
-//        assertEquals(11.00, underTest.getBalance(), 0.001);
-//    }
+
+    @Test
+    public void shouldBeAbleToDepositAnotherAmount() {
+        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
+        underTest.deposit(19.99);
+        assertEquals(29.99, underTest.getBalance(), .001);
+    }
+
+    @Test
+    public void shouldBeAbleToWithdrawFromAccount() {
+        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
+        underTest.withdraw(5.00);
+        assertEquals(5.00, underTest.getBalance(), .001);
+    }
+    @Test
+    public void shouldNotBeAbleToWithdrawIfItTakesTheBalanceBelowZero(){
+        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
+        underTest.withdraw(2345.43);
+        assertEquals(10.00, underTest.getBalance(), 0.001);
+    }
+    @Test
+    public void shouldBeAbleToAccrueInterest(){
+        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
+        underTest.accrueInterest();
+        assertEquals(11.00, underTest.getBalance(), 0.001);
+    }
 //    @Test
 //    public void shouldBeAbleToDepositAccrueInterestAndDepositAgain(){
 //        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, .05);
