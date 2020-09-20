@@ -38,20 +38,20 @@ public class SavingsAccountTest {
         assertEquals(45673251, accountNumber);
     }
 
-//    @Test
-//    public void shouldBeAbleToSetInterestRateInConstructor(){
-//        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
-//        double interestRate = underTest.getInterestRate();
-//        assertEquals(.10, interestRate, 0.001);
-//
-//    }
-//
-//    @Test
-//    public void shouldBeAbleToAddMoneyToAccount() {
-//        SavingsAccount underTest = new SavingsAccount(10.01, 110110110, 0.10);
-//        underTest.deposit(9.99);
-//        assertEquals(20, underTest.getBalance(), .001);
-//    }
+    @Test
+    public void shouldBeAbleToSetInterestRateInConstructor(){
+        SavingsAccount underTest = new SavingsAccount(10.00, 110110110, 0.10);
+        double interestRate = underTest.getInterestRate();
+        assertEquals(.10, interestRate, 0.001);
+
+    }
+
+    @Test
+    public void shouldBeAbleToAddMoneyToAccount() {
+        SavingsAccount underTest = new SavingsAccount(10.01, 110110110, 0.10);
+        underTest.deposit(9.99);
+        assertEquals(20, underTest.getBalance(), .001);
+    }
 //
 //    @Test
 //    public void shouldBeAbleToDepositAnotherAmount() {
