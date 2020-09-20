@@ -23,13 +23,13 @@ public class SavingsAccountTest {
     public void shouldBeAbleToInstantiateSavingsAccount() {
         SavingsAccount underTest = new SavingsAccount(0, 110110110, 0.10);
     }
-//
-//    @Test
-//    public void newAccountsHaveAStartingBalanceFromTheConstructor() {
-//        SavingsAccount underTest = new SavingsAccount(10.10, 110110110, 0.10);
-//        double balance = underTest.getBalance();
-//        assertEquals(10.10, balance, 0.001);
-//    }
+
+    @Test
+    public void newAccountsHaveAStartingBalanceFromTheConstructor() {
+        SavingsAccount underTest = new SavingsAccount(10.10, 110110110, 0.10);
+        double balance = underTest.getBalance();
+        assertEquals(10.10, balance, 0.001);
+    }
 //
 //    @Test
 //    public void newAccountHasAnAccountNumberPassedFromConstructor() {
