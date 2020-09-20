@@ -30,5 +30,7 @@ public class SavingsAccount {
     }
 
     public void accrueInterest() {
+        balance = balance + balance * getInterestRate();
     }
+
 }
